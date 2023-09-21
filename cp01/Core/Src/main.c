@@ -97,10 +97,23 @@ int main(void)
   while (1)
   {
 
-	  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin); // GPIOA->BSRR = (1<<5);
-	  LL_mDelay(200);
-	  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin); //GPIOA->BRR = (1<<5);
-	  LL_mDelay(200);
+	  uint8_t pole[32] = {1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0};
+
+	  for (uint8_t i = 0; i < 32; i++)
+	  {
+			  if (pole[i] == 1)
+			  	  {
+				  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin); //GPIOA->BRR = (1<<5);
+				  LL_mDelay(200);
+			  }
+			  else
+				  {
+				  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin); // GPIOA->BSRR = (1<<5);
+				  LL_mDelay(200);
+			  }
+	  }
+
+
 
 	  /* USER CODE END WHILE */
 
