@@ -97,27 +97,42 @@ int main(void)
   while (1)
   {
 
-	  uint8_t pole[32] = {1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0};
+	  /*static const uint8_t pole[] = {1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0};
 
-	  for (uint8_t i = 0; i < 32; i++)
+
+	  for (uint8_t i = 0; i < sizeof(pole); i++)
 	  {
-			  if (pole[i] == 1)
-			  	  {
-				  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin); //GPIOA->BRR = (1<<5);
-				  LL_mDelay(200);
-			  }
-			  else
-				  {
-				  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin); // GPIOA->BSRR = (1<<5);
-				  LL_mDelay(200);
-			  }
+		  if (pole[i] == 1)
+		  {
+			  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin); //GPIOA->BRR = (1<<5);
+
+		  }
+		  else
+		  {
+			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin); // GPIOA->BSRR = (1<<5);
+
+		  }
+		  LL_mDelay(200);
+	  }*/
+
+
+	  static const uint32_t pole = 0b10101001110111011100101010000000;
+	  for (int8_t i = 31; i >= 0; i--)
+	  {
+		  if (((pole >> i) & 1) == 1)
+		  {
+			  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin); //GPIOA->BRR = (1<<5);
+		  }
+		  else
+		  {
+			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin); // GPIOA->BSRR = (1<<5);
+		  }
+		  LL_mDelay(200);
+
 	  }
-
-
-
 	  /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
+	  /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
