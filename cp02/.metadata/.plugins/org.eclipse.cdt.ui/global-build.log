@@ -368,3 +368,192 @@ arm-none-eabi-size   cp02.elf
    5360	     12	   1588	   6960	   1b30	cp02.elf
 Finished building: default.size.stdout
  
+12:23:43 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'tlacitko':
+../Core/Src/main.c:111:25: warning: unused variable 'old_s1' [-Wunused-variable]
+  111 |         static uint16_t old_s1;
+      |                         ^~~~~~
+At top level:
+../Core/Src/main.c:111:25: warning: 'old_s1' defined but not used [-Wunused-variable]
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5284	     16	   1576	   6876	   1adc	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
+12:23:57 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-size   cp02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5284	     16	   1576	   6876	   1adc	cp02.elf
+Finished building: default.size.stdout
+ 
+12:25:46 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'tlacitko':
+../Core/Src/main.c:120:33: error: 'off_time' undeclared (first use in this function)
+  120 |                                 off_time = Tick + LED_TIME_LONG;
+      |                                 ^~~~~~~~
+../Core/Src/main.c:120:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:26:05 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5324	     16	   1584	   6924	   1b0c	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
+12:26:09 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-size   cp02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5324	     16	   1584	   6924	   1b0c	cp02.elf
+Finished building: default.size.stdout
+ 
+12:28:51 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5412	     16	   1584	   7012	   1b64	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
+12:28:55 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-size   cp02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5412	     16	   1584	   7012	   1b64	cp02.elf
+Finished building: default.size.stdout
+ 
+12:30:20 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5324	     16	   1584	   6924	   1b0c	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
+12:30:24 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-size   cp02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5324	     16	   1584	   6924	   1b0c	cp02.elf
+Finished building: default.size.stdout
+ 
+12:32:16 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'tlacitko':
+../Core/Src/main.c:127:21: error: 's2' undeclared (first use in this function); did you mean 's1'?
+  127 |                 if (s2 == 1) {
+      |                     ^~
+      |                     s1
+../Core/Src/main.c:127:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:32:24 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5388	     16	   1584	   6988	   1b4c	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
+12:32:28 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-size   cp02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5388	     16	   1584	   6988	   1b4c	cp02.elf
+Finished building: default.size.stdout
+ 
+12:35:20 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'tlacitko':
+../Core/Src/main.c:113:18: warning: unused variable 's2' [-Wunused-variable]
+  113 |         uint32_t s2 = LL_GPIO_IsInputPinSet(S2_GPIO_Port, S2_Pin);
+      |                  ^~
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5336	     16	   1584	   6936	   1b18	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
+12:35:28 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5324	     16	   1584	   6924	   1b0c	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
+12:35:31 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-size   cp02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5324	     16	   1584	   6924	   1b0c	cp02.elf
+Finished building: default.size.stdout
+ 
+12:47:33 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=0 -DDATA_CACHE_ENABLE=0 -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'tlacitko':
+../Core/Src/main.c:119:21: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  119 |                 if (s1 =! 0) {
+      |                     ^~
+arm-none-eabi-gcc -o "cp02.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp02\cp02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cp02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cp02.elf
+ 
+arm-none-eabi-size   cp02.elf 
+arm-none-eabi-objdump -h -S  cp02.elf  > "cp02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5320	     16	   1584	   6920	   1b08	cp02.elf
+Finished building: default.size.stdout
+ 
+Finished building: cp02.list
+ 
