@@ -1,0 +1,10 @@
+11:31:26 **** Incremental Build of configuration Debug for project cp02 ****
+make -j4 all 
+arm-none-eabi-size   cp02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5360	     12	   1588	   6960	   1b30	cp02.elf
+Finished building: default.size.stdout
+ 
+
+11:31:26 Build Finished. 0 errors, 0 warnings. (took 212ms)
+

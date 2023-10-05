@@ -13,3 +13,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-05 10:06:39.150
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-05 10:23:16.074
+!MESSAGE Indexed 'cp02' (12 sources, 74 headers) in 2.31 sec: 3,750 declarations; 12,155 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.013%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-10-05 10:39:25.020
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-10-05 10:40:31.872
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-10-05 10:40:48.679
+!MESSAGE Won't launch debug session since we failed to locate the binary.
