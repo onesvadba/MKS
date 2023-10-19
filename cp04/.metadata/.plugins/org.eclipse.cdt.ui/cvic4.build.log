@@ -1,0 +1,10 @@
+12:59:05 **** Incremental Build of configuration Debug for project cvic4 ****
+make -j4 all 
+arm-none-eabi-size   cvic4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11512	     20	   1788	  13320	   3408	cvic4.elf
+Finished building: default.size.stdout
+ 
+
+12:59:05 Build Finished. 0 errors, 0 warnings. (took 311ms)
+
