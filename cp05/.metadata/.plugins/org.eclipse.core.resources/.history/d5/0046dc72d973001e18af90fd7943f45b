@@ -66,13 +66,6 @@ static void MX_USART2_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-int _write(int file, char const *buf, int n)
-{
-	/* stdout redirection to UART2 */
-	HAL_UART_Transmit(&huart2, (uint8_t*)(buf), n, HAL_MAX_DELAY);
-	return n;
-}
-
 static void uart_process_command(char *cmd)
 {
 	printf("prijato: '%s'\n", cmd);
@@ -80,14 +73,14 @@ static void uart_process_command(char *cmd)
 
 static void uart_byte_available(uint8_t c)
 {
-	static uint16_t cnt;
-	static char data[CMD_BUFFER_LEN];
-	if (cnt < CMD_BUFFER_LEN && c >= 32 && c <= 126) data[cnt++] = c;
-	if ((c == '\n' || c == '\r') && cnt > 0) {
-		data[cnt] = '\0';
-		uart_process_command(data);
-		cnt = 0;
-	}
+ static uint16_t cnt;
+ static char data[CMD_BUFFER_LEN];
+ if (cnt < CMD_BUFFER_LEN && c >= 32 && c <= 126) data[cnt++] = c;
+ if ((c == '\n' || c == '\r') && cnt > 0) {
+ data[cnt] = '\0';
+ uart_process_command(data);
+ cnt = 0;
+ }
 }
 
 
