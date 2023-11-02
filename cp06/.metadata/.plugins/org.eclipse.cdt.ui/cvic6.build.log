@@ -1,34 +1,17 @@
-10:59:52 **** Incremental Build of configuration Debug for project cvic6 ****
+11:38:20 **** Incremental Build of configuration Debug for project cvic6 ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-../Core/Src/sct.c: In function 'sct_led':
-../Core/Src/sct.c:20:35: error: 'SCT_SDI_GPIO_Port' undeclared (first use in this function); did you mean 'TMS_GPIO_Port'?
-   20 |                 HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (value & 1));
-      |                                   ^~~~~~~~~~~~~~~~~
-      |                                   TMS_GPIO_Port
-../Core/Src/sct.c:20:35: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/sct.c:20:54: error: 'SCT_SDI_Pin' undeclared (first use in this function)
-   20 |                 HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (value & 1));
-      |                                                      ^~~~~~~~~~~
-../Core/Src/sct.c:23:35: error: 'SCT_CLK_GPIO_Port' undeclared (first use in this function); did you mean 'TCK_GPIO_Port'?
-   23 |                 HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, 1);
-      |                                   ^~~~~~~~~~~~~~~~~
-      |                                   TCK_GPIO_Port
-../Core/Src/sct.c:23:54: error: 'SCT_CLK_Pin' undeclared (first use in this function); did you mean 'TCK_Pin'?
-   23 |                 HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, 1);
-      |                                                      ^~~~~~~~~~~
-      |                                                      TCK_Pin
-../Core/Src/sct.c:27:27: error: 'SCT_NLA_GPIO_Port' undeclared (first use in this function); did you mean 'USART_RX_GPIO_Port'?
-   27 |         HAL_GPIO_WritePin(SCT_NLA_GPIO_Port, SCT_NLA_Pin, 1);
-      |                           ^~~~~~~~~~~~~~~~~
-      |                           USART_RX_GPIO_Port
-../Core/Src/sct.c:27:46: error: 'SCT_NLA_Pin' undeclared (first use in this function)
-   27 |         HAL_GPIO_WritePin(SCT_NLA_GPIO_Port, SCT_NLA_Pin, 1);
-      |                                              ^~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:40: Core/Src/sct.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  12092	     20	   1764	  13876	   3634	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
 
-10:59:53 Build Failed. 8 errors, 0 warnings. (took 521ms)
+11:38:21 Build Finished. 0 errors, 0 warnings. (took 1s.80ms)
 
