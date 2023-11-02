@@ -58,6 +58,8 @@ static void MX_USART2_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+//static int16_t pole
+
 /* USER CODE END 0 */
 
 /**
@@ -76,7 +78,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-OW_Init();
+//OW_Init();
   /* USER CODE END Init */
 
   /* Configure the system clock */
