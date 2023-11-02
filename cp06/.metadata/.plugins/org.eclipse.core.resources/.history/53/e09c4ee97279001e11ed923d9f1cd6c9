@@ -107,13 +107,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  static uint32_t delay;
-
-	  if (HAL_GetTick() > delay + 750) {
-		  OWConvertAll();
-		  delay = HAL_GetTick();
-	  }
-
 
 	  uint32_t new_s2 = !HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin);
 	  uint32_t new_s1 = !HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin);
@@ -135,23 +128,19 @@ int main(void)
 
 	  case SHOW_DS:
 		  //DS18b20
+		  OWConvertAll();
+		  HAL_Delay(750);
 		  int16_t temp_18b20;
 		  OWReadTemperature(&temp_18b20);
 		  sct_value(temp_18b20/10);
-
-		  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 1);
-		  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 0);
-
+		  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 1);
 		  break;
 
 	  case SHOW_NTC:
 		  //NTC
 		  uint16_t value = HAL_ADC_GetValue(&hadc);
 		  sct_value(lookup[value]);
-
-		  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 1);
-		  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 0);
-
+		  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 1);
 		  break;
 
 	  }

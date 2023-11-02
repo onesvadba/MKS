@@ -105,13 +105,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  volatile uint32_t Tick;
   while (1)
   {
 	  static uint32_t delay;
 
-	  if (HAL_GetTick() > delay + 750) {
+	  if (Tick > delay + 750) {
 		  OWConvertAll();
-		  delay = HAL_GetTick();
+		  delay = Tick;
 	  }
 
 
@@ -135,6 +136,8 @@ int main(void)
 
 	  case SHOW_DS:
 		  //DS18b20
+		  OWConvertAll();
+		  HAL_Delay(750);
 		  int16_t temp_18b20;
 		  OWReadTemperature(&temp_18b20);
 		  sct_value(temp_18b20/10);

@@ -1,4 +1,4 @@
-11:38:20 **** Incremental Build of configuration Debug for project cvic6 ****
+12:46:51 **** Incremental Build of configuration Debug for project cvic6 ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,11 +7,11 @@ Finished building target: cvic6.elf
 arm-none-eabi-size   cvic6.elf 
 arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
    text	   data	    bss	    dec	    hex	filename
-  12092	     20	   1764	  13876	   3634	cvic6.elf
+  13816	     20	   1772	  15608	   3cf8	cvic6.elf
 Finished building: default.size.stdout
  
 Finished building: cvic6.list
  
 
-11:38:21 Build Finished. 0 errors, 0 warnings. (took 1s.80ms)
+12:46:52 Build Finished. 0 errors, 0 warnings. (took 889ms)
 

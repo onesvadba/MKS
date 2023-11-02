@@ -901,3 +901,392 @@ Finished building: default.size.stdout
  
 Finished building: cvic6.list
  
+11:47:34 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13644	     20	   1772	  15436	   3c4c	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+11:47:40 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13644	     20	   1772	  15436	   3c4c	cvic6.elf
+Finished building: default.size.stdout
+ 
+11:57:55 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:11: warning: implicit declaration of function 'LL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+  126 |           LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+      |           ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:114:20: warning: unused variable 's1' [-Wunused-variable]
+  114 |           uint32_t s1 = HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin);
+      |                    ^~
+../Core/Src/main.c:113:20: warning: unused variable 's2' [-Wunused-variable]
+  113 |           uint32_t s2 = HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin);
+      |                    ^~
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Temp/xnesva08/MKS/cp06/cvic6/Debug/../Core/Src/main.c:126: undefined reference to `LL_GPIO_SetOutputPin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: cvic6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:58:07 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:11: warning: implicit declaration of function 'HAL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+  126 |           HAL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+      |           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:114:20: warning: unused variable 's1' [-Wunused-variable]
+  114 |           uint32_t s1 = HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin);
+      |                    ^~
+../Core/Src/main.c:113:20: warning: unused variable 's2' [-Wunused-variable]
+  113 |           uint32_t s2 = HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin);
+      |                    ^~
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Temp/xnesva08/MKS/cp06/cvic6/Debug/../Core/Src/main.c:126: undefined reference to `HAL_GPIO_SetOutputPin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: cvic6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:04:21 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:26: error: 'new_s2' undeclared (first use in this function)
+  119 |           if (old_s2 && !new_s2) { // falling edge
+      |                          ^~~~~~
+../Core/Src/main.c:119:26: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:120:19: error: 'off_time' undeclared (first use in this function)
+  120 |                   off_time = Tick + LED_TIME_SHORT;
+      |                   ^~~~~~~~
+../Core/Src/main.c:120:30: error: 'Tick' undeclared (first use in this function); did you mean 'uwTick'?
+  120 |                   off_time = Tick + LED_TIME_SHORT;
+      |                              ^~~~
+      |                              uwTick
+../Core/Src/main.c:120:37: error: 'LED_TIME_SHORT' undeclared (first use in this function)
+  120 |                   off_time = Tick + LED_TIME_SHORT;
+      |                                     ^~~~~~~~~~~~~~
+../Core/Src/main.c:124:26: error: 'new_s1' undeclared (first use in this function)
+  124 |           if (old_s1 && !new_s1) { // falling edge
+      |                          ^~~~~~
+../Core/Src/main.c:115:20: warning: unused variable 's1' [-Wunused-variable]
+  115 |           uint32_t s1 = HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin);
+      |                    ^~
+../Core/Src/main.c:114:20: warning: unused variable 's2' [-Wunused-variable]
+  114 |           uint32_t s2 = HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin);
+      |                    ^~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:04:35 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:26: error: 'new_s2' undeclared (first use in this function)
+  119 |           if (old_s2 && !new_s2) { // falling edge
+      |                          ^~~~~~
+../Core/Src/main.c:119:26: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:124:26: error: 'new_s1' undeclared (first use in this function)
+  124 |           if (old_s1 && !new_s1) { // falling edge
+      |                          ^~~~~~
+../Core/Src/main.c:115:20: warning: unused variable 's1' [-Wunused-variable]
+  115 |           uint32_t s1 = HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin);
+      |                    ^~
+../Core/Src/main.c:114:20: warning: unused variable 's2' [-Wunused-variable]
+  114 |           uint32_t s2 = HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin);
+      |                    ^~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:04:52 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13780	     20	   1772	  15572	   3cd4	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:04:58 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13780	     20	   1772	  15572	   3cd4	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:07:30 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13796	     20	   1772	  15588	   3ce4	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:07:33 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13796	     20	   1772	  15588	   3ce4	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:08:41 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13644	     20	   1772	  15436	   3c4c	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:14:01 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13644	     20	   1772	  15436	   3c4c	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:19:12 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13736	     20	   1772	  15528	   3ca8	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:19:15 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13736	     20	   1772	  15528	   3ca8	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:22:44 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:19: error: too few arguments to function 'HAL_GPIO_WritePin'
+  136 |                   HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin);
+      |                   ^~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:197,
+                 from ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h:294:19: note: declared here
+  294 | void              HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                   ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:22:52 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13752	     20	   1772	  15544	   3cb8	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:23:32 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13764	     20	   1772	  15556	   3cc4	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:23:36 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13764	     20	   1772	  15556	   3cc4	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:25:29 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13792	     20	   1772	  15584	   3ce0	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:25:33 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13792	     20	   1772	  15584	   3ce0	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:26:58 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13764	     20	   1772	  15556	   3cc4	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:28:14 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13792	     20	   1772	  15584	   3ce0	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:32:36 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13792	     20	   1772	  15584	   3ce0	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:32:39 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13792	     20	   1772	  15584	   3ce0	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:38:16 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13820	     20	   1772	  15612	   3cfc	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:38:19 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13820	     20	   1772	  15612	   3cfc	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:41:52 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13820	     20	   1772	  15612	   3cfc	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:41:56 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-size   cvic6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13820	     20	   1772	  15612	   3cfc	cvic6.elf
+Finished building: default.size.stdout
+ 
+12:45:14 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13808	     20	   1772	  15600	   3cf0	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
+12:46:51 **** Incremental Build of configuration Debug for project cvic6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp06\cvic6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic6.elf
+ 
+arm-none-eabi-size   cvic6.elf 
+arm-none-eabi-objdump -h -S  cvic6.elf  > "cvic6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13816	     20	   1772	  15608	   3cf8	cvic6.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic6.list
+ 
