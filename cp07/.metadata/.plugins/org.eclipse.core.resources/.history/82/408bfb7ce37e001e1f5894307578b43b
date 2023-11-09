@@ -307,12 +307,12 @@ void StartDefaultTask(void const * argument)
 void StartVisualTask(void const * argument)
 {
 	/* USER CODE BEGIN StartVisualTask */
+
 	/* Infinite loop */
 	for(;;)
 	{
 
 		int16_t msg;
-
 		if (xQueueReceive(xVisualQueueHandle, &msg, portMAX_DELAY)) {
 			if (msg > 1000){
 				HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 0);
@@ -350,23 +350,18 @@ void StartAcceleroTask(void const * argument)
 	for(;;)
 	{
 
-		int16_t msg;
-
 		xQueueSend(xVisualQueueHandle, &msg, 0);
-		msg = 0;
+		osDelay(300);
+
+		xQueueSend(xVisualQueueHandle, &msg, -5000);
 		osDelay(300);
 
 		xQueueSend(xVisualQueueHandle, &msg, 0);
-		msg = -5000;
 		osDelay(300);
 
-		xQueueSend(xVisualQueueHandle, &msg, 0);
-		msg = 0;
+		xQueueSend(xVisualQueueHandle, &msg, 5000);
 		osDelay(300);
 
-		xQueueSend(xVisualQueueHandle, &msg, 0);
-		msg = 5000;
-		osDelay(300);
 
 		osDelay(1);
 	}

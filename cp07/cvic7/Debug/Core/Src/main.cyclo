@@ -4,6 +4,6 @@
 ../Core/Src/main.c:236:13:MX_GPIO_Init	1
 ../Core/Src/main.c:289:6:StartDefaultTask	1
 ../Core/Src/main.c:307:6:StartVisualTask	4
-../Core/Src/main.c:362:6:StartAcceleroTask	1
-../Core/Src/main.c:381:6:HAL_TIM_PeriodElapsedCallback	2
-../Core/Src/main.c:398:6:Error_Handler	1
+../Core/Src/main.c:346:6:StartAcceleroTask	1
+../Core/Src/main.c:384:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:401:6:Error_Handler	1

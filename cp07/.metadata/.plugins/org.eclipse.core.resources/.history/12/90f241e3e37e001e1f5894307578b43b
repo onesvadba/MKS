@@ -361,10 +361,6 @@ void StartAcceleroTask(void const * argument)
 		osDelay(300);
 
 		xQueueSend(xVisualQueueHandle, &msg, 0);
-		msg = 0;
-		osDelay(300);
-
-		xQueueSend(xVisualQueueHandle, &msg, 0);
 		msg = 5000;
 		osDelay(300);
 

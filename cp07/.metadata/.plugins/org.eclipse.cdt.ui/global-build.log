@@ -175,3 +175,119 @@ arm-none-eabi-size   cvic7.elf
   16672	    104	   6176	  22952	   59a8	cvic7.elf
 Finished building: default.size.stdout
  
+10:36:18 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:59,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:353:49: error: 'msg' undeclared (first use in this function)
+  353 |                 xQueueSend(xVisualQueueHandle, &msg, 0);
+      |                                                 ^~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:92: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                            ^~~~~~~~~~~~~
+../Core/Src/main.c:353:49: note: each undeclared identifier is reported only once for each function it appears in
+  353 |                 xQueueSend(xVisualQueueHandle, &msg, 0);
+      |                                                 ^~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:92: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                            ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:36:41 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:315:56: error: 'msg' undeclared (first use in this function)
+  315 |                 if (xQueueReceive(xVisualQueueHandle, &msg, portMAX_DELAY)) {
+      |                                                        ^~~
+../Core/Src/main.c:315:56: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:36:47 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:315:56: error: 'msg' undeclared (first use in this function)
+  315 |                 if (xQueueReceive(xVisualQueueHandle, &msg, portMAX_DELAY)) {
+      |                                                        ^~~
+../Core/Src/main.c:315:56: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:37:17 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:59,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:352:49: error: 'msg' undeclared (first use in this function)
+  352 |                 xQueueSend(xVisualQueueHandle, &msg, 0);
+      |                                                 ^~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:92: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                            ^~~~~~~~~~~~~
+../Core/Src/main.c:352:49: note: each undeclared identifier is reported only once for each function it appears in
+  352 |                 xQueueSend(xVisualQueueHandle, &msg, 0);
+      |                                                 ^~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:92: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                            ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:37:43 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp07\cvic7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic7.elf
+ 
+arm-none-eabi-size   cvic7.elf 
+arm-none-eabi-objdump -h -S  cvic7.elf  > "cvic7.list"
+   text	   data	    bss	    dec	    hex	filename
+  16640	    104	   6176	  22920	   5988	cvic7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic7.list
+ 
+10:37:46 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-size   cvic7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16640	    104	   6176	  22920	   5988	cvic7.elf
+Finished building: default.size.stdout
+ 
+10:39:01 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp07\cvic7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic7.elf
+ 
+arm-none-eabi-size   cvic7.elf 
+arm-none-eabi-objdump -h -S  cvic7.elf  > "cvic7.list"
+   text	   data	    bss	    dec	    hex	filename
+  16640	    104	   6176	  22920	   5988	cvic7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic7.list
+ 
+10:39:04 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-size   cvic7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16640	    104	   6176	  22920	   5988	cvic7.elf
+Finished building: default.size.stdout
+ 
+10:39:33 **** Incremental Build of configuration Debug for project cvic7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp07\cvic7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic7.elf
+ 
+arm-none-eabi-size   cvic7.elf 
+arm-none-eabi-objdump -h -S  cvic7.elf  > "cvic7.list"
+   text	   data	    bss	    dec	    hex	filename
+  16672	    104	   6176	  22952	   59a8	cvic7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic7.list
+ 

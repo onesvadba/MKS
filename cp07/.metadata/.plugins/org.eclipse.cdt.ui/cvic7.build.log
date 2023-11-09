@@ -1,10 +1,17 @@
-10:32:28 **** Incremental Build of configuration Debug for project cvic7 ****
+10:39:33 **** Incremental Build of configuration Debug for project cvic7 ****
 make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xnesva08\MKS\cp07\cvic7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic7.elf
+ 
 arm-none-eabi-size   cvic7.elf 
+arm-none-eabi-objdump -h -S  cvic7.elf  > "cvic7.list"
    text	   data	    bss	    dec	    hex	filename
   16672	    104	   6176	  22952	   59a8	cvic7.elf
 Finished building: default.size.stdout
  
+Finished building: cvic7.list
+ 
 
-10:32:28 Build Finished. 0 errors, 0 warnings. (took 361ms)
+10:39:34 Build Finished. 0 errors, 0 warnings. (took 976ms)
 
