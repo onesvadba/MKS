@@ -113,7 +113,7 @@ int main(void)
 	  printf("Tick\n");*/
 
 	  if (key != -1){
-		  printf("Stisknuto: %d\n", key);
+		  printf("%d\n", key);
 		  HAL_Delay(500);
 		  key = -1;
 	  }

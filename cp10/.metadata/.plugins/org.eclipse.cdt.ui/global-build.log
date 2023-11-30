@@ -441,3 +441,73 @@ arm-none-eabi-size   CVIC10.elf
   15676	    116	   2052	  17844	   45b4	CVIC10.elf
 Finished building: default.size.stdout
  
+11:32:02 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15668	    116	   2052	  17836	   45ac	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+11:34:11 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15668	    116	   2052	  17836	   45ac	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+11:34:25 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15668	    116	   2052	  17836	   45ac	CVIC10.elf
+Finished building: default.size.stdout
+ 
+11:35:16 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15668	    116	   2052	  17836	   45ac	CVIC10.elf
+Finished building: default.size.stdout
+ 
+11:36:57 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15668	    116	   2052	  17836	   45ac	CVIC10.elf
+Finished building: default.size.stdout
+ 
+11:37:24 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15668	    116	   2052	  17836	   45ac	CVIC10.elf
+Finished building: default.size.stdout
+ 
+11:38:16 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15680	    116	   2052	  17848	   45b8	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
