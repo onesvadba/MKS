@@ -511,3 +511,477 @@ Finished building: default.size.stdout
  
 Finished building: CVIC10.list
  
+11:43:31 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:381:8: warning: type defaults to 'int' in declaration of 'kod' [-Wimplicit-int]
+  381 |  const kod [1][5] = {7, 9, 3, 2, 12};
+      |        ^~~
+../Core/Src/main.c:381:21: warning: missing braces around initializer [-Wmissing-braces]
+  381 |  const kod [1][5] = {7, 9, 3, 2, 12};
+      |                     ^
+      |                      {             }
+../Core/Src/main.c:381:8: warning: unused variable 'kod' [-Wunused-variable]
+  381 |  const kod [1][5] = {7, 9, 3, 2, 12};
+      |        ^~~
+At top level:
+../Core/Src/main.c:381:8: warning: 'kod' defined but not used [-Wunused-const-variable=]
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15680	    116	   2052	  17848	   45b8	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+11:50:27 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:30: error: 'kod' undeclared (first use in this function)
+  124 |                   if (key == kod[0]){
+      |                              ^~~
+../Core/Src/main.c:124:30: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:390:8: warning: type defaults to 'int' in declaration of 'kod' [-Wimplicit-int]
+  390 |  const kod [5] = {7, 9, 3, 2, 12};
+      |        ^~~
+../Core/Src/main.c:390:8: warning: unused variable 'kod' [-Wunused-variable]
+At top level:
+../Core/Src/main.c:390:8: warning: 'kod' defined but not used [-Wunused-const-variable=]
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:51:23 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:50:7: warning: type defaults to 'int' in declaration of 'kod' [-Wimplicit-int]
+   50 | const kod [5] = {7, 9, 3, 2, 12};
+      |       ^~~
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15712	    116	   2052	  17880	   45d8	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+11:54:11 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:50:7: warning: type defaults to 'int' in declaration of 'kod' [-Wimplicit-int]
+   50 | const kod [5] = {7, 9, 3, 2, 12};
+      |       ^~~
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15856	    116	   2052	  18024	   4668	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:14:48 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:27: error: too few arguments to function 'HAL_TIM_PeriodElapsedCallback'
+  126 |                           HAL_TIM_PeriodElapsedCallback();
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2062:6: note: declared here
+ 2062 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:130:56: warning: useless storage class specifier in empty declaration
+  130 |           static enum {DIGIT1, DIGIT2, DIGIT3, DIGIT4, DIGIT5};
+      |                                                        ^~~~~~
+../Core/Src/main.c:131:11: error: 'state' undeclared (first use in this function)
+  131 |           state = DIGIT1;
+      |           ^~~~~
+../Core/Src/main.c:131:11: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:16:25 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:27: error: too few arguments to function 'HAL_TIM_PeriodElapsedCallback'
+  126 |                           HAL_TIM_PeriodElapsedCallback();
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2062:6: note: declared here
+ 2062 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:17:04 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:27: warning: unused variable 'delay' [-Wunused-variable]
+  123 |           static uint32_t delay;
+      |                           ^~~~~
+At top level:
+../Core/Src/main.c:123:27: warning: 'delay' defined but not used [-Wunused-variable]
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15892	    116	   2052	  18060	   468c	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:17:26 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15892	    116	   2052	  18060	   468c	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:17:38 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15892	    116	   2052	  18060	   468c	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:17:51 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15892	    116	   2052	  18060	   468c	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:26:43 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15744	    116	   2052	  17912	   45f8	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:26:56 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15744	    116	   2052	  17912	   45f8	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:27:07 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15744	    116	   2052	  17912	   45f8	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:29:54 **** Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15724	    116	   2052	  17892	   45e4	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:30:51 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15724	    116	   2052	  17892	   45e4	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:31:06 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15724	    116	   2052	  17892	   45e4	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:34:28 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:150:109: error: expected ';' before '}' token
+  150 |                                                                   HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin)
+      |                                                                                                             ^
+      |                                                                                                             ;
+  151 |                                                           }
+      |                                                           ~                                                  
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:35:02 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  16144	    116	   2052	  18312	   4788	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:35:18 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16144	    116	   2052	  18312	   4788	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:35:41 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16144	    116	   2052	  18312	   4788	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:36:26 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15944	    116	   2052	  18112	   46c0	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:36:39 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15944	    116	   2052	  18112	   46c0	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:38:41 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15656	    116	   2052	  17824	   45a0	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:38:55 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15656	    116	   2052	  17824	   45a0	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:39:08 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15656	    116	   2052	  17824	   45a0	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:43:40 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:51:15: warning: 'pos' defined but not used [-Wunused-variable]
+   51 | static int8_t pos = 0;
+      |               ^~~
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15732	    116	   2052	  17900	   45ec	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:44:12 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15732	    116	   2052	  17900	   45ec	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:44:18 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15732	    116	   2052	  17900	   45ec	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:47:09 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15768	    116	   2060	  17944	   4618	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:48:18 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15844	    116	   2060	  18020	   4664	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:49:21 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15848	    116	   2060	  18024	   4668	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:49:36 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15848	    116	   2060	  18024	   4668	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:50:29 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15848	    116	   2060	  18024	   4668	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:51:04 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15848	    116	   2060	  18024	   4668	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:52:06 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15864	    116	   2060	  18040	   4678	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:52:22 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15864	    116	   2060	  18040	   4678	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:54:51 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CVIC10.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp10\CVIC10\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CVIC10.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CVIC10.elf
+ 
+arm-none-eabi-size   CVIC10.elf 
+arm-none-eabi-objdump -h -S  CVIC10.elf  > "CVIC10.list"
+   text	   data	    bss	    dec	    hex	filename
+  15860	    116	   2060	  18036	   4674	CVIC10.elf
+Finished building: default.size.stdout
+ 
+Finished building: CVIC10.list
+ 
+12:55:04 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15860	    116	   2060	  18036	   4674	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:55:59 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15860	    116	   2060	  18036	   4674	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:56:05 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15860	    116	   2060	  18036	   4674	CVIC10.elf
+Finished building: default.size.stdout
+ 
+12:56:16 **** Incremental Build of configuration Debug for project CVIC10 ****
+make -j4 all 
+arm-none-eabi-size   CVIC10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15860	    116	   2060	  18036	   4674	CVIC10.elf
+Finished building: default.size.stdout
+ 

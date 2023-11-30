@@ -47,6 +47,9 @@ UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
 static volatile int8_t key = -1;
+static const int8_t kod[] = {7, 9, 3, 2, 12};
+static int8_t pos = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -112,12 +115,37 @@ int main(void)
 	  HAL_Delay(250);
 	  printf("Tick\n");*/
 
-	  if (key != -1){
+	  /*if (key != -1){
 		  printf("Stisknuto: %d\n", key);
 		  HAL_Delay(500);
 		  key = -1;
-	  }
+	  }*/
 
+	  static uint32_t delay;
+
+	  if (HAL_GetTick() > delay + 750) {
+
+		  if (key != -1){
+			  if (key == kod[pos]){
+				  printf("Stisknuto: %d\n", key);
+				  HAL_Delay(200);
+				  pos = pos + 1;
+				  key = -1;
+			  }
+			  else {
+				  key = -1;
+				  pos = 0;
+			  }
+
+		  }
+
+		  if (pos > 4){
+			  HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+			  pos = 0;
+		  }
+
+		  delay = HAL_GetTick();
+	  }
 
     /* USER CODE END WHILE */
 
