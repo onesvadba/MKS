@@ -384,3 +384,1342 @@ Finished building: default.size.stdout
  
 Finished building: cvic11.list
  
+11:11:27 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34656	    292	   4196	  39144	   98e8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:12:02 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34656	    292	   4196	  39144	   98e8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:14:36 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34672	    292	   4196	  39160	   98f8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:15:48 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34680	    292	   4196	  39168	   9900	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:16:03 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34680	    292	   4196	  39168	   9900	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:18:06 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:19: error: 'buff' undeclared (first use in this function)
+  129 |                   buff[0] = 0x00;
+      |                   ^~~~
+../Core/Src/main.c:129:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:18:36 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34672	    292	   4196	  39160	   98f8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:19:44 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34648	    292	   4196	  39136	   98e0	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:22:11 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:27: warning: variable 'buff' set but not used [-Wunused-but-set-variable]
+  129 |                   uint8_t buff[4];
+      |                           ^~~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34672	    292	   4196	  39160	   98f8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:22:46 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:27: warning: variable 'buff' set but not used [-Wunused-but-set-variable]
+  129 |                   uint8_t buff[4];
+      |                           ^~~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34672	    292	   4196	  39160	   98f8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:23:26 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:19: error: 'buff' undeclared (first use in this function)
+  129 |                   buff[0] = 0x00; // pust leve tlacitko
+      |                   ^~~~
+../Core/Src/main.c:129:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:23:42 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34656	    292	   4196	  39144	   98e8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:27:23 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34672	    292	   4196	  39160	   98f8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:27:55 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34672	    292	   4196	  39160	   98f8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:29:28 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34664	    292	   4196	  39152	   98f0	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:30:36 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34664	    292	   4196	  39152	   98f0	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:32:10 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34656	    292	   4196	  39144	   98e8	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:32:54 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34664	    292	   4196	  39152	   98f0	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:35:19 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34664	    292	   4196	  39152	   98f0	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:38:35 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34664	    292	   4196	  39152	   98f0	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:39:23 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:128:42: error: expected ';' before numeric constant
+  128 |                                   sx = sx 50;
+      |                                          ^~~
+      |                                          ;
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:39:33 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34664	    292	   4196	  39152	   98f0	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:45:14 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:15: error: invalid storage class for function 'step'
+  106 |   static void step() {
+      |               ^~~~
+../Core/Src/main.c: In function 'step':
+../Core/Src/main.c:108:39: error: 'dx' undeclared (first use in this function); did you mean 'sx'?
+  108 |                   buff[1] = (int8_t) (dx); // posun X
+      |                                       ^~
+      |                                       sx
+../Core/Src/main.c:108:39: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:109:39: error: 'dy' undeclared (first use in this function); did you mean 'sy'?
+  109 |                   buff[2] = (int8_t) (dy); // posun Y
+      |                                       ^~
+      |                                       sy
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:15: error: invalid storage class for function 'circle'
+  115 |   static void circle(uint32_t r) {
+      |               ^~~~~~
+At top level:
+../Core/Src/main.c:106:15: warning: 'step' defined but not used [-Wunused-function]
+  106 |   static void step() {
+      |               ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:45:52 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'step':
+../Core/Src/main.c:108:39: error: 'dx' undeclared (first use in this function); did you mean 'sx'?
+  108 |                   buff[1] = (int8_t) (dx); // posun X
+      |                                       ^~
+      |                                       sx
+../Core/Src/main.c:108:39: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:109:39: error: 'dy' undeclared (first use in this function); did you mean 'sy'?
+  109 |                   buff[2] = (int8_t) (dy); // posun Y
+      |                                       ^~
+      |                                       sy
+At top level:
+../Core/Src/main.c:106:8: warning: 'step' defined but not used [-Wunused-function]
+  106 |   void step() {
+      |        ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:47:02 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:106:8: warning: 'step' defined but not used [-Wunused-function]
+  106 |   void step() {
+      |        ^~~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34692	    292	   4196	  39180	   990c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:47:36 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:106:8: warning: 'step' defined but not used [-Wunused-function]
+  106 |   void step() {
+      |        ^~~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34692	    292	   4196	  39180	   990c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:49:14 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34780	    292	   4196	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:50:10 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:106:8: warning: 'stepx' defined but not used [-Wunused-function]
+  106 |   void stepx(uint32_t l) {
+      |        ^~~~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34692	    292	   4196	  39180	   990c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:52:53 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:37: error: expected ';', ',' or ')' before '=' token
+  114 |   void circle(uint32_t r,int32_t sx = 0,int32_t sy = 0) {
+      |                                     ^
+../Core/Src/main.c:139:19: warning: implicit declaration of function 'circle' [-Wimplicit-function-declaration]
+  139 |                   circle(100, 0, 0);
+      |                   ^~~~~~
+../Core/Src/main.c:101:12: warning: unused variable 'i' [-Wunused-variable]
+  101 |   uint32_t i = 0;
+      |            ^
+At top level:
+../Core/Src/main.c:105:8: warning: 'stepx' defined but not used [-Wunused-function]
+  105 |   void stepx(uint32_t x_step, uint32_t y_step) {
+      |        ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:53:19 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:105:8: warning: 'stepx' defined but not used [-Wunused-function]
+  105 |   void stepx(uint32_t x_step, uint32_t y_step) {
+      |        ^~~~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34692	    292	   4196	  39180	   990c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:54:42 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:105:8: warning: 'stepx' defined but not used [-Wunused-function]
+  105 |   void stepx(uint32_t x_step, uint32_t y_step) {
+      |        ^~~~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34692	    292	   4196	  39180	   990c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:56:01 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:144:19: error: too few arguments to function 'stepx'
+  144 |                   stepx(50);
+      |                   ^~~~~
+../Core/Src/main.c:105:8: note: declared here
+  105 |   void stepx(uint32_t x_step, uint32_t y_step) {
+      |        ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:56:16 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34796	    292	   4196	  39284	   9974	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:56:42 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34796	    292	   4196	  39284	   9974	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:57:29 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34804	    292	   4196	  39292	   997c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+11:57:54 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34796	    292	   4196	  39284	   9974	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:01:14 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: warning: unused variable 'sy' [-Wunused-variable]
+  103 |   int32_t sy = 0;
+      |           ^~
+../Core/Src/main.c:102:11: warning: unused variable 'sx' [-Wunused-variable]
+  102 |   int32_t sx = 0;
+      |           ^~
+../Core/Src/main.c:101:12: warning: unused variable 'i' [-Wunused-variable]
+  101 |   uint32_t i = 0;
+      |            ^
+../Core/Src/main.c: In function 'circle':
+../Core/Src/main.c:116:15: error: 'i' undeclared (first use in this function)
+  116 |           if (i < 51){
+      |               ^
+../Core/Src/main.c:116:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:119:36: error: 'sx' undeclared (first use in this function); did you mean 'dx'?
+  119 |                   int32_t dx = x - sx;
+      |                                    ^~
+      |                                    dx
+../Core/Src/main.c:120:36: error: 'sy' undeclared (first use in this function); did you mean 'dy'?
+  120 |                   int32_t dy = y - sy;
+      |                                    ^~
+      |                                    dy
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'step'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+  122 |                   step(dx, dy, 0x01);
+      |                   ^~~~
+      |                   strsep
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:130:3: error: expected identifier or '(' before 'while'
+  130 |   while (1)
+      |   ^~~~~
+../Core/Src/main.c:145:1: error: expected identifier or '(' before '}' token
+  145 | }
+      | ^
+../Core/Src/main.c:105:8: warning: 'stepx' defined but not used [-Wunused-function]
+  105 |   void stepx(uint32_t x_step, uint32_t y_step, uint32_t tlacitko) {
+      |        ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:02:19 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34796	    292	   4196	  39284	   9974	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:03:13 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: warning: unused variable 'sy' [-Wunused-variable]
+  103 |   int32_t sy = 0;
+      |           ^~
+../Core/Src/main.c:102:11: warning: unused variable 'sx' [-Wunused-variable]
+  102 |   int32_t sx = 0;
+      |           ^~
+../Core/Src/main.c:101:12: warning: unused variable 'i' [-Wunused-variable]
+  101 |   uint32_t i = 0;
+      |            ^
+../Core/Src/main.c: In function 'circle':
+../Core/Src/main.c:116:15: error: 'i' undeclared (first use in this function)
+  116 |           if (i < 51){
+      |               ^
+../Core/Src/main.c:116:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:119:36: error: 'sx' undeclared (first use in this function); did you mean 'dx'?
+  119 |                   int32_t dx = x - sx;
+      |                                    ^~
+      |                                    dx
+../Core/Src/main.c:120:36: error: 'sy' undeclared (first use in this function); did you mean 'dy'?
+  120 |                   int32_t dy = y - sy;
+      |                                    ^~
+      |                                    dy
+../Core/Src/main.c:121:19: error: 'buff' undeclared (first use in this function)
+  121 |                   buff[0] = 0x01; // stiskni leve tlacitko
+      |                   ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:135:3: error: expected identifier or '(' before 'while'
+  135 |   while (1)
+      |   ^~~~~
+../Core/Src/main.c:150:1: error: expected identifier or '(' before '}' token
+  150 | }
+      | ^
+../Core/Src/main.c:105:8: warning: 'step' defined but not used [-Wunused-function]
+  105 |   void step(uint32_t x_step, uint32_t y_step) {
+      |        ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:03:46 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34780	    292	   4196	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:05:12 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34736	    292	   4196	  39224	   9938	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:06:32 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34752	    292	   4196	  39240	   9948	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:09:01 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34760	    292	   4196	  39248	   9950	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:10:30 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'circle':
+../Core/Src/main.c:123:19: error: too few arguments to function 'step'
+  123 |                   step(dx, dy);
+      |                   ^~~~
+../Core/Src/main.c:106:8: note: declared here
+  106 |   void step(uint32_t x_step, uint32_t y_step, uint32_t tlacitko) {
+      |        ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:41: error: expected ';' before '}' token
+  139 |                           step(0, 30, 1)
+      |                                         ^
+      |                                         ;
+  140 |                   }
+      |                   ~                      
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:10:44 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:41: error: expected ';' before '}' token
+  139 |                           step(0, 30, 1)
+      |                                         ^
+      |                                         ;
+  140 |                   }
+      |                   ~                      
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:10:58 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34784	    292	   4196	  39272	   9968	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:11:52 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34792	    292	   4196	  39280	   9970	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:13:56 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34752	    292	   4196	  39240	   9948	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:14:47 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:12: warning: unused variable 'j' [-Wunused-variable]
+  102 |   uint32_t j = 0;
+      |            ^
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34744	    292	   4196	  39232	   9940	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:15:56 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:12: warning: unused variable 'j' [-Wunused-variable]
+  102 |   uint32_t j = 0;
+      |            ^
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34760	    292	   4196	  39248	   9950	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:20:15 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34748	    292	   4212	  39252	   9954	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:20:41 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34740	    292	   4212	  39244	   994c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:21:33 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34732	    292	   4212	  39236	   9944	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:23:04 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34752	    292	   4212	  39256	   9958	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:23:26 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34760	    292	   4212	  39264	   9960	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:24:20 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'circle':
+../Core/Src/main.c:77:9: warning: statement with no effect [-Wunused-value]
+   77 |         for (i; i < 51; i++){
+      |         ^~~
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34760	    292	   4212	  39264	   9960	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:25:05 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34748	    292	   4212	  39252	   9954	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:26:21 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34760	    292	   4212	  39264	   9960	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:27:30 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:29:23 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:30:54 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:31:10 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:32:22 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34752	    292	   4212	  39256	   9958	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:33:10 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34752	    292	   4212	  39256	   9958	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:33:46 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:34:49 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:35:55 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:36:36 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34764	    292	   4212	  39268	   9964	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:38:14 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34800	    292	   4212	  39304	   9988	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:39:30 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34800	    292	   4212	  39304	   9988	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:41:19 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-size   cvic11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34800	    292	   4212	  39304	   9988	cvic11.elf
+Finished building: default.size.stdout
+ 
+12:43:38 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34796	    292	   4212	  39300	   9984	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:45:04 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34772	    292	   4196	  39260	   995c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:45:52 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34776	    292	   4196	  39264	   9960	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:46:26 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  34776	    292	   4196	  39264	   9960	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:48:24 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35056	    292	   4196	  39544	   9a78	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:49:29 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35056	    292	   4196	  39544	   9a78	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:49:51 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35056	    292	   4196	  39544	   9a78	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:51:01 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35056	    292	   4196	  39544	   9a78	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:52:29 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35056	    292	   4196	  39544	   9a78	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:53:25 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35060	    292	   4196	  39548	   9a7c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:54:02 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35060	    292	   4196	  39548	   9a7c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:54:45 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35060	    292	   4196	  39548	   9a7c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:55:15 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35060	    292	   4196	  39548	   9a7c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:55:46 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35060	    292	   4196	  39548	   9a7c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:56:32 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35060	    292	   4196	  39548	   9a7c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:57:04 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35060	    292	   4196	  39548	   9a7c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 
+12:58:56 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'circle':
+../Core/Src/main.c:85:28: error: expected ';' before '}' token
+   85 |                 step(0,0,0)
+      |                            ^
+      |                            ;
+   86 |         }
+      |         ~                   
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:59:10 **** Incremental Build of configuration Debug for project cvic11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvic11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\xnesva08\MKS\cp11\cvic11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvic11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvic11.elf
+ 
+arm-none-eabi-size   cvic11.elf 
+arm-none-eabi-objdump -h -S  cvic11.elf  > "cvic11.list"
+   text	   data	    bss	    dec	    hex	filename
+  35076	    292	   4196	  39564	   9a8c	cvic11.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvic11.list
+ 

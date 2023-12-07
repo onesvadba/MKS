@@ -1,5 +1,8 @@
-../Core/Src/main.c:68:5:main	56	static
-../Core/Src/main.c:140:6:SystemClock_Config	88	static
-../Core/Src/main.c:186:13:MX_USART3_UART_Init	8	static
-../Core/Src/main.c:219:13:MX_GPIO_Init	56	static
-../Core/Src/main.c:309:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:64:6:step	32	static
+../Core/Src/main.c:74:6:circle	56	static
+../Core/Src/main.c:89:6:oblouk	56	static
+../Core/Src/main.c:110:5:main	16	static
+../Core/Src/main.c:173:6:SystemClock_Config	88	static
+../Core/Src/main.c:219:13:MX_USART3_UART_Init	8	static
+../Core/Src/main.c:252:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:342:6:Error_Handler	4	static,ignoring_inline_asm

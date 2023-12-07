@@ -59,6 +59,46 @@ static void MX_USART3_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+
+
+void step(int32_t x_step, int32_t y_step, int32_t tlacitko) {
+	uint8_t buff[4];
+	buff[0] = tlacitko; // stiskni leve tlacitko
+	buff[1] = (int8_t) (x_step); // posun X
+	buff[2] = (int8_t) (y_step); // posun Y
+	buff[3] = 0; // bez scrollu
+	USBD_HID_SendReport(&hUsbDeviceFS, buff, sizeof(buff));
+	HAL_Delay(USBD_HID_GetPollingInterval(&hUsbDeviceFS));
+}
+
+void circle(uint32_t r) {
+	int32_t sx = 0;
+	int32_t sy = 0;
+	for (uint32_t i = 0; i < 51; i++){
+		float x = r*cosf(i*(2*M_PI/50));
+		float y = r*sinf(i*(2*M_PI/50));
+		int32_t dx = x - sx;
+		int32_t dy = y - sy;
+		step(dx, dy, 1);
+		sx = sx + dx;
+		sy = sy + dy;
+	}
+}
+
+void oblouk(uint32_t r) {
+	int32_t sx = 0;
+	int32_t sy = 0;
+	for (uint32_t i = 6; i < 19; i++){
+		float x = r*cosf(i*(2*M_PI/50));
+		float y = r*sinf(i*(2*M_PI/50));
+		int32_t dx = x - sx;
+		int32_t dy = y - sy;
+		step(dx, dy, 1);
+		sx = sx + dx;
+		sy = sy + dy;
+	}
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -97,34 +137,25 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  uint32_t i = 0;
-  int32_t sx = 0;
-  int32_t sy = 0;
-  uint32_t r = 100;
+
+
   while (1)
   {
 
 	  uint32_t button = HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin);
 	  if (button != 0){
-
-		  float x = r*cosf(i*(2*M_PI/50));
-		  float y = r*sinf(i*(2*M_PI/50));
-		  int32_t dx = x - sx;
-		  int32_t dy = y - sy;
-		  uint8_t buff[4];
-		  buff[0] = 0x01; // stiskni leve tlacitko
-		  buff[1] = (int8_t) (dx); // posun X +10
-		  buff[2] = (int8_t) (dy); // posun Y -3
-		  buff[3] = 0; // bez scrollu
-
-		  i = i + 1;
-		  sx = sx + dx;
-		  sy = sy + dy;
-
-		  USBD_HID_SendReport(&hUsbDeviceFS, buff, sizeof(buff));
-		  HAL_Delay(USBD_HID_GetPollingInterval(&hUsbDeviceFS));
+		  circle(100);
+		  step(-60,15,0x01);
+		  step(0,-30,0x00);
+		  step(-30, -10, 0x01);
+		  circle(20);
+		  step(50, 0, 0x00);
+		  circle(20);
+		  step(-110, -40, 0x00);
+		  oblouk(100);
 
 	  }
+
 
     /* USER CODE END WHILE */
 
