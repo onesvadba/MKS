@@ -1087,3 +1087,225 @@
 2023-12-14 10:11:37,072 [INFO] ApiDb:452 - User favorites MCUs=[]
 2023-12-14 10:11:37,074 [INFO] ApiDb:448 - Save user favorites file C:\Users\xnesva08/.stm32cubeide/favorites.boards.txt: 0 item(s)
 2023-12-14 10:11:37,074 [INFO] ApiDb:452 - User favorites Boards=[]
+2023-12-14 10:13:45,506 [INFO] RtosManager:919 - Current active RTOS is FREERTOS [Cortex-M4NS]
+2023-12-14 10:13:46,183 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-12-14 10:13:46,270 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-12-14 10:14:21,315 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-12-14 10:14:21,315 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-12-14 10:14:21,315 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2023-12-14 10:14:29,504 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-12-14 10:14:29,504 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-12-14 10:14:29,504 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2023-12-14 10:15:16,836 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-12-14 10:15:16,836 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-12-14 10:15:16,836 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2023-12-14 10:16:17,886 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-12-14 10:17:17,648 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-12-14 10:17:17,648 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-12-14 10:17:17,648 [WARN] TasksAndQueuesTab:775 - max value is: 8192.0
+2023-12-14 10:17:23,262 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 192
+2023-12-14 10:17:23,262 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 49152
+2023-12-14 10:17:28,178 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-12-14 10:17:28,179 [WARN] TasksAndQueuesTab:763 - 1024 128
+2023-12-14 10:17:28,179 [WARN] TasksAndQueuesTab:775 - max value is: 8192.0
+2023-12-14 10:19:40,775 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-12-14 10:19:50,743 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:19:50,783 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:19:50,899 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:12,345 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:12,377 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:12,457 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:20,918 [INFO] BspModel:204 - createCodeInput : Driver_PHY Template : 6 IPName :  IPMode :  Component : LAN8742 Solution : LAN8742 InstanceName : 
+2023-12-14 10:20:20,926 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:20,957 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:21,041 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:31,000 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 580000336 Bytes (840957952)
+2023-12-14 10:20:33,806 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 609289216 Bytes (840957952)
+2023-12-14 10:20:38,954 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 722533376 Bytes (840957952)
+2023-12-14 10:20:39,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-12-14 10:20:39,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-14 10:20:39,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-14 10:20:39,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-14 10:20:39,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2023-12-14 10:20:39,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-14 10:20:39,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-14 10:20:39,673 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-12-14 10:20:39,674 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-12-14 10:20:39,684 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:20:39,870 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\license.tmp_save
+2023-12-14 10:20:40,208 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\license.tmp
+2023-12-14 10:20:40,252 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\gpio.tmp_save
+2023-12-14 10:20:40,482 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\gpio.tmp
+2023-12-14 10:20:40,569 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_vars.tmp_save
+2023-12-14 10:20:40,799 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_vars.tmp
+2023-12-14 10:20:40,812 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_inc.tmp_save
+2023-12-14 10:20:40,901 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_inc.tmp
+2023-12-14 10:20:40,907 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_HalInit.tmp_save
+2023-12-14 10:20:41,074 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_HalInit.tmp
+2023-12-14 10:20:41,087 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_Msp.tmp_save
+2023-12-14 10:20:41,240 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_Msp.tmp
+2023-12-14 10:20:41,428 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:20:41,438 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp_save
+2023-12-14 10:20:41,724 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp
+2023-12-14 10:20:41,730 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp_save
+2023-12-14 10:20:41,848 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp
+2023-12-14 10:20:41,853 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp_save
+2023-12-14 10:20:41,948 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp
+2023-12-14 10:20:41,953 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-12-14 10:20:42,062 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp
+2023-12-14 10:20:42,066 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-12-14 10:20:42,149 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp
+2023-12-14 10:20:42,154 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp_save
+2023-12-14 10:20:42,251 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp
+2023-12-14 10:20:42,256 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp_save
+2023-12-14 10:20:42,335 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp
+2023-12-14 10:20:42,361 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:20:42,386 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:20:42,421 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp_save
+2023-12-14 10:20:42,543 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp
+2023-12-14 10:20:42,549 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp_save
+2023-12-14 10:20:42,622 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp
+2023-12-14 10:20:42,630 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp_save
+2023-12-14 10:20:42,702 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp
+2023-12-14 10:20:42,714 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-12-14 10:20:42,788 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp
+2023-12-14 10:20:42,801 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-12-14 10:20:42,877 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp
+2023-12-14 10:20:42,891 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp_save
+2023-12-14 10:20:42,964 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp
+2023-12-14 10:20:42,971 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp_save
+2023-12-14 10:20:43,039 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp
+2023-12-14 10:20:43,044 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\FreeRTOSConfig.h_save
+2023-12-14 10:20:43,176 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\FreeRTOSConfig.h
+2023-12-14 10:20:43,182 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\freertos.c_save
+2023-12-14 10:20:43,291 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\freertos.c
+2023-12-14 10:20:43,305 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:20:43,339 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.c_save
+2023-12-14 10:20:43,529 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.c
+2023-12-14 10:20:43,535 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.h_save
+2023-12-14 10:20:43,649 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.h
+2023-12-14 10:20:43,656 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\lwipopts.h_save
+2023-12-14 10:20:43,894 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\lwipopts.h
+2023-12-14 10:20:43,899 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.c_save
+2023-12-14 10:20:44,018 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.c
+2023-12-14 10:20:44,033 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.h_save
+2023-12-14 10:20:44,129 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.h
+2023-12-14 10:20:44,169 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_it.c_save
+2023-12-14 10:20:44,448 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_it.c
+2023-12-14 10:20:44,475 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_it.h_save
+2023-12-14 10:20:44,581 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_it.h
+2023-12-14 10:20:44,621 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_msp.c_save
+2023-12-14 10:20:44,796 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_msp.c
+2023-12-14 10:20:44,804 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\system.tmp_save
+2023-12-14 10:20:44,900 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\system.tmp
+2023-12-14 10:20:44,904 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2023-12-14 10:20:45,018 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_timebase_tim.c
+2023-12-14 10:20:45,040 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-12-14 10:20:45,166 [INFO] CodeEngine:335 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_hal_conf.h
+2023-12-14 10:20:45,253 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\main.h_save
+2023-12-14 10:20:45,365 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\main.h
+2023-12-14 10:20:45,378 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\main.c_save
+2023-12-14 10:20:45,534 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\main.c
+2023-12-14 10:20:46,517 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 587mS.
+2023-12-14 10:20:46,532 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-12-14 10:20:46,900 [INFO] ConfigFileManager:1457 - The Die is : DIE419
+2023-12-14 10:20:49,372 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2838mS.
+2023-12-14 10:20:49,372 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-12-14 10:20:49,392 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-12-14 10:36:08,717 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:36:17,060 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:36:17,094 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:36:17,309 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:37:26,538 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 331838728 Bytes (934281216)
+2023-12-14 10:37:28,039 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 360150280 Bytes (934281216)
+2023-12-14 10:37:35,311 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 461862152 Bytes (934281216)
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-14 10:37:35,539 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-12-14 10:37:35,540 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-12-14 10:37:35,550 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-12-14 10:37:35,715 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\license.tmp_save
+2023-12-14 10:37:35,833 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\license.tmp
+2023-12-14 10:37:35,868 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\gpio.tmp_save
+2023-12-14 10:37:36,017 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\gpio.tmp
+2023-12-14 10:37:36,191 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_vars.tmp_save
+2023-12-14 10:37:36,368 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_vars.tmp
+2023-12-14 10:37:36,372 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_inc.tmp_save
+2023-12-14 10:37:36,454 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_inc.tmp
+2023-12-14 10:37:36,458 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_HalInit.tmp_save
+2023-12-14 10:37:36,571 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_HalInit.tmp
+2023-12-14 10:37:36,575 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_Msp.tmp_save
+2023-12-14 10:37:36,763 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\eth_Msp.tmp
+2023-12-14 10:37:36,936 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:37:36,945 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp_save
+2023-12-14 10:37:37,170 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp
+2023-12-14 10:37:37,176 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp_save
+2023-12-14 10:37:37,283 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp
+2023-12-14 10:37:37,288 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp_save
+2023-12-14 10:37:37,370 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp
+2023-12-14 10:37:37,374 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-12-14 10:37:37,458 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp
+2023-12-14 10:37:37,462 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-12-14 10:37:37,534 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp
+2023-12-14 10:37:37,538 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp_save
+2023-12-14 10:37:37,611 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp
+2023-12-14 10:37:37,614 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp_save
+2023-12-14 10:37:37,686 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp
+2023-12-14 10:37:37,702 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:37:37,719 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:37:37,727 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp_save
+2023-12-14 10:37:37,841 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_inc.tmp
+2023-12-14 10:37:37,848 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp_save
+2023-12-14 10:37:37,926 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_vars.tmp
+2023-12-14 10:37:37,934 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp_save
+2023-12-14 10:37:38,008 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_pfp.tmp
+2023-12-14 10:37:38,023 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-12-14 10:37:38,093 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_obj_creat.tmp
+2023-12-14 10:37:38,099 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-12-14 10:37:38,165 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_kernelStart.tmp
+2023-12-14 10:37:38,170 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp_save
+2023-12-14 10:37:38,239 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_default_thread.tmp
+2023-12-14 10:37:38,245 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp_save
+2023-12-14 10:37:38,311 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\rtos_threads.tmp
+2023-12-14 10:37:38,326 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\FreeRTOSConfig.h_save
+2023-12-14 10:37:38,420 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\FreeRTOSConfig.h
+2023-12-14 10:37:38,434 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\freertos.c_save
+2023-12-14 10:37:38,515 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\freertos.c
+2023-12-14 10:37:38,526 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-14 10:37:38,549 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.c_save
+2023-12-14 10:37:38,666 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.c
+2023-12-14 10:37:38,679 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.h_save
+2023-12-14 10:37:38,757 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\App\lwip.h
+2023-12-14 10:37:38,770 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\lwipopts.h_save
+2023-12-14 10:37:38,989 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\lwipopts.h
+2023-12-14 10:37:39,003 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.c_save
+2023-12-14 10:37:39,113 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.c
+2023-12-14 10:37:39,119 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.h_save
+2023-12-14 10:37:39,197 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\LWIP\Target\ethernetif.h
+2023-12-14 10:37:39,234 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_it.c_save
+2023-12-14 10:37:39,444 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_it.c
+2023-12-14 10:37:39,457 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_it.h_save
+2023-12-14 10:37:39,528 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_it.h
+2023-12-14 10:37:39,549 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_msp.c_save
+2023-12-14 10:37:39,660 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_msp.c
+2023-12-14 10:37:39,664 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\system.tmp_save
+2023-12-14 10:37:39,743 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\MXTmpFiles\system.tmp
+2023-12-14 10:37:39,756 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2023-12-14 10:37:39,844 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\stm32f4xx_hal_timebase_tim.c
+2023-12-14 10:37:39,865 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-12-14 10:37:39,993 [INFO] CodeEngine:335 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\stm32f4xx_hal_conf.h
+2023-12-14 10:37:40,036 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\main.h_save
+2023-12-14 10:37:40,139 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Inc\main.h
+2023-12-14 10:37:40,153 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\main.c_save
+2023-12-14 10:37:40,296 [INFO] CodeEngine:279 - Generated code: C:\Temp\xnesva08\MKS\cp12\cvic12\Core\Src\main.c
+2023-12-14 10:37:41,351 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 597mS.
+2023-12-14 10:37:41,364 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-12-14 10:37:41,560 [INFO] ConfigFileManager:1457 - The Die is : DIE419
+2023-12-14 10:37:44,230 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2866mS.
+2023-12-14 10:37:44,231 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-12-14 10:37:44,248 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.

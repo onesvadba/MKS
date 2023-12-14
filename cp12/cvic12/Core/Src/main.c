@@ -56,7 +56,7 @@ static void MX_USART3_UART_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
-
+extern void tcpecho_init(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -294,12 +294,16 @@ static void MX_GPIO_Init(void)
   * @param  argument: Not used
   * @retval None
   */
+
+
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
 {
   /* init code for LWIP */
   MX_LWIP_Init();
   /* USER CODE BEGIN 5 */
+  /* Initialize tcp echo server */
+  tcpecho_init();
   /* Infinite loop */
   for(;;)
   {
